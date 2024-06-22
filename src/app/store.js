@@ -5,10 +5,11 @@ import postsReducer from '../features/counter/postsSlice';
 
 
 export const store = configureStore({
-    reducer:{
+    reducer:{//collection of all reducers from each single slicer
         //counter reducer
         counter:counterReducer,
-        //add more reducers
+    
+        //posts reducer
         posts:postsReducer,
     }
 })
