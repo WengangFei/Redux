@@ -5,13 +5,11 @@ import { createSlice } from "@reduxjs/toolkit";
 //slice is to slice redux state object to multiple slices of state
 //slice is a collection of reducer logic and actions for a single feature in app 
 
-const initialState = {
-    count: 0
-}
+
 
 export const counterSlice = createSlice({
     name:'counter',
-    initialState,
+    initialState:{count:0},
     reducers:{//all actions
         increment:state=>{
             state.count += 1;

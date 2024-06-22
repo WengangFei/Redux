@@ -1,4 +1,7 @@
-import Counter from "./features/counter/Counter"
+// import Counter from "./features/counter/Counter"
+
+import PostList from "./features/counter/PostsList";
+
 
 
 
@@ -6,7 +9,8 @@ function App() {
 
 
   return (
-    <Counter />
+    // <Counter />
+    <PostList />
   )
 }
 
