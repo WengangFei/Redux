@@ -1,6 +1,6 @@
 // import Counter from "./features/counter/Counter"
 
-import PostList from "./features/counter/PostsList";
+import PostList from "./features/posts/PostsList";
 
 
 
