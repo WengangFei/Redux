@@ -17,17 +17,17 @@ const PostsList = () => {
   const submitData = (e)=>{
 
     e.preventDefault();
+    //dispatch is a method used to send actions to the store
     dispatch(
       addData({
         id:nanoid(),
         title,
         content,
       })
-    )
-    
+    );
     
     setTitle('');
-    setContent('')
+    setContent('');
   }
   
 
@@ -49,9 +49,9 @@ const PostsList = () => {
 
       <form>
         <label>Title:</label>
-        <input type='text' onChange={e=>setTitle(e.target.value)}/><br /><br />
+        <input type='text' onChange={e=>setTitle(e.target.value)} value={title}/><br /><br />
         <label>Content:</label>
-        <input type='text' onChange={e=>setContent(e.target.value)}/><br /><br />
+        <input type='text' onChange={e=>setContent(e.target.value)} value={content}/><br /><br />
         <button type='submit' onClick={submitData}>Submit</button>
       </form>
     </>

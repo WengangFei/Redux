@@ -39,7 +39,7 @@ const postsSlice = createSlice({
 })
 
 
-
+console.log(initialState)
 
 export default postsSlice.reducer;
 export const { addData } = postsSlice.actions;
